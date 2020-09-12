@@ -49,6 +49,39 @@ function ingresarProducto(){
     return productos1;
 }
 
+function nuevoProducto () {
+    let precioDeCompra = parseInt(prompt('Introduce el precio de compra'));
+    let precioDeVenta = parseInt(prompt('Introduce el precio de venta'));
+    let nombre = prompt('Introduce el nombre del producto');
+    let inventario =parseInt(prompt('Introduce el inventario'));
+    let ordenDeRecompra =parseInt(prompt('Introduce la orden de recompra'));
+    let nuevoProducto = {precioDeCompra: precioDeCompra,
+         precioDeVenta: precioDeVenta,
+          nombre: nombre, inventario: inventario,
+           ordenDeRecompra: ordenDeRecompra
+        }
+    return nuevoProducto
+}
+
+
+function agregarAProductos () {
+    productos[productos.lenght] = nuevoProducto()
+}
+
+/* function ingresarProducto(){
+
+    let elementos = parseInt(prompt('Cuantos productos quieres agregar?'));
+    for(let i = 0 ; i < elementos  ; i++){
+        let precioDeCompra = parseInt(prompt('Introduce el precio de compra'));
+        let precioDeVenta = parseInt(prompt('Introduce el precio de venta'));
+        let nombre = prompt('Introduce el nombre del producto');
+        let inventario =parseInt(prompt('Introduce el inventario'));
+        let ordenDeRecompra =parseInt(prompt('Introduce la orden de recompra'));
+
+        productos.push({nombre,precioDeCompra,precioDeVenta,inventario,ordenDeRecompra});
+    }
+} */
+
 function borrarProducto(item){
     item = prompt('coloque el nombre del producto a eliminar');
     if(item === productos.nombre){
