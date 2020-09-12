@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="productos.css">  
+    <title>PRODUCTOS</title>
+</head>
+<body>
+    <script src='productos.js'></script>
+    <button href='#' id='botoncliente' onclick="botonCliente()">Cliente</button>
+    <br>
+    <input type="text" size="48" id='campobusqueda' placeholder="Buscar producto"> <img src="imagenes/lupa.png"  width="30" onclick="buscarProducto()" href='#' id="buscarproducto" ></input>
+    <br>
+    <br>
+    <textarea id='resultadodebusqueda' readonly style="resize: none" rows="5" cols="50"></textarea>
+    <br>
+    <br>
+    <img src = 'imagenes/inventario.png' width='50' style="cursor: pointer; position: relative;" onclick="inventario()">
+    <img src = 'imagenes/pngwing.com.png' width='50' style="cursor: pointer; position: relative;" onclick="ingresarProducto()">
+    <img src = 'imagenes/iconfinder-trash-4341321_120557.png' width='50' style="cursor: pointer; position: relative;" onclick="borrarProducto()">
+
+</body>
+</html>

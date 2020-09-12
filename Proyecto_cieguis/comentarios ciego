@@ -1,0 +1,24 @@
+git status
+
+    sirve para verificar el status de los archivos.
+
+git add nombreDeArchivo
+
+    sirve para añadir archivos.
+
+git commit -m 'mensaje'
+
+    sirve para comentar los cambios.
+
+git push origin master
+
+    sirve para subir los cambios.
+
+git pull origin master
+
+    sirve para jalar los cambios.
+
+
+
+
+

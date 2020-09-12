@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+body{
+    background-image: url('imagenes/backGroundFrutas.jpg');
+}
+
+#botoncliente{
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    background: whitesmoke ;
+    position: fixed;
+    bottom:0px;
+    right: 0px ;
+    font: icon;
+    color: rgb(0, 0, 0);
+}
+
+#campobusqueda{
+    position: sticky;
+    width: 365px;
+    margin: 30px auto;
+    position: relative;
+}
+
+#buscarproducto{
+    cursor: pointer;
+}
+
+#campoingresarproducto{
+    width: 365px;
+    margin: 30px auto;
+    position: relative;
+}

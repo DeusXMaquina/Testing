@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+.navegacion{
+    width: 600px;
+    margin: 30px auto;
+    background:none;
+}
+
+.navegacion ul{
+    list-style: none;
+}   
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color : #ffffff;
+    font-family: 'open sans';
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: green;
+    transition: all .3s;
+}
+
+.subMenu{
+    position: absolute;
+    background: rgb(77, 77, 77);
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5;
+}
+
+.subMenu li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: 'open sans';
+    text-decoration: none;
+}
+
+.menu :hover .subMenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+body{
+    background-image: url('imagenes/backGroundFrutas.jpg');
+}
+.flotante {
+    display:scroll;
+    position: fixed;
+    bottom: -5px;
+    right:-600px;
+}
+#logOut{
+    width: 100px;
+    height: 35px;
+    background: whitesmoke ;
+    cursor:pointer;
+    position: fixed;
+    bottom:0px;
+    right: 0px ;
+    font: icon;
+    color: rgb(0, 0, 0);
+}
+
+#logOut :hover{
+    opacity: 1;
+    color: green;
+    visibility: visible;
+}
+
+

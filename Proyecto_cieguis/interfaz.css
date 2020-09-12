@@ -1,0 +1,14 @@
+body{
+    background-image: url('imagenes/backGroundFrutas.jpg');
+}
+form{
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    border-color: black;
+    position: absolute;
+}
+#accedere{
+    cursor: pointer;
+}
+

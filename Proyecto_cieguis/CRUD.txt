@@ -1,0 +1,11 @@
+/* (CRUD) CreateReadUpdateDelete
+        AGENDA agenda donde puedas crear, leer, actualizar y borrar citas.
+        o punto de venta donde puedas crear, leer, actualizar y borrar productos.
+        cada cita o producto tiene que tener 5 propiedades.
+        agenda, nombre de la cita, fecha de la cita, participantes, tiempo de la cita y lugar.
+        si es un producto: nombre del producto, precio de compra, precio de venta, cantidad en inventario.
+        y recompra, si un producto como coca tengo solo 5 en existencia, sea el limite para saber
+        que debes de comprar mas.
+        debe existir una vista de todos los productos, debo poder buscar un producto donde me salga
+        toda su informacion.
+        */
