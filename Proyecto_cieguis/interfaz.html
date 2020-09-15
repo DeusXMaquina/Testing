@@ -7,6 +7,11 @@
     <title>Punto De Venta</title>
 </head>
 <body>
+    <div class="container" id="container">
+        <div class="preloader">
+            <p>Cargando</p>
+        </div>
+    </div>
     <h1>Punto De Venta</h1>
     <form name='form' action="puntoDeVenta.html">
         <p>Usuario:        <p><input type="text" name='login'>
@@ -16,13 +21,20 @@
         <input id='accedere' onclick="acceder()" type="button" value='Acceder'>  
     </form>
     <script>
+        let container = document.getElementById('container');
+
+        setTimeout(function(){
+            container.classList.add('cerrar');
+        }, 5000);
+
         function acceder(){
             if(document.form.login.value == 'jonny' && document.form.password.value == 'pagliacci'){
-                window.location.href = "http://127.0.0.1:5500/puntoDeVenta.html";
+                window.location.href = "http://127.0.0.1:5500/Proyecto_cieguis/puntoDeVenta.html";
             }else{
                 alert('Usuario O Contraseña incorrectos, Favor de introducir la informacion nuevamente');
             }
         }
+
     </script>
 </body>
 </html>

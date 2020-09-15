@@ -9,3 +9,14 @@
         debe existir una vista de todos los productos, debo poder buscar un producto donde me salga
         toda su informacion.
         */
+
+/*
+
+        1. completar la barra de navegacion:
+                agregar menus y destinarles la funcion.
+        2. barra de navegacion en todos las paginas.
+        3. dejar de usar promps. :C 
+        4. crear campos que tengan sentido, cuando agregues crea los diferentes campos de cada producto.
+        5. mostrar productos en tablas.
+
+*/
