@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="productos.css">  
-    <title>PRODUCTOS</title>
+    <title>Ingresar Productos</title>
 </head>
 <body>
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a >PRODUCTOS</a>
+                    <ul class='subMenu'>
+                        <li><a >INGRESAR PRODUCTOS</a></li>
+                        <li><a onclick="eliminar()" >ELIMINAR PRODUCTOS</a></li>
+                    </ul>
+                </li>
+                <li><a >INVENTARIO</a>
+                    <ul class='subMenu'>
+                        <li><a >TOTAL DE INVENTARIO</a></li>
+                    </ul>
+                </li>
+                <li><a >VENTAS</a>
+                    <ul class='subMenu'>
+                        <li><a >VENDER PRODUCTOS</a></li>
+                    </ul>
+                </li>
+                <li><a >CONTACTO</a>
+                    <ul class='subMenu'>
+                        <li><a >INICIO</a></li>
+                        <li><a >NOSOTROS</a></li>
+                        <li><a >SERVICIOS</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <script src='productos.js'></script>
-    <button href='#' id='botoncliente' onclick="botonCliente()">Cliente</button>
-    <br>
-    <input type="text" size="48" id='campobusqueda' placeholder="Buscar producto"> <img src="imagenes/lupa.png"  width="30" onclick="buscarProducto()" href='#' id="buscarproducto" ></input>
-    <br>
-    <br>
-    <textarea id='resultadodebusqueda' readonly style="resize: none" rows="5" cols="50"></textarea>
-    <br>
-    <br>
-    <img src = 'imagenes/inventario.png' width='50' style="cursor: pointer; position: relative;" onclick="inventario()">
-    <img src = 'imagenes/pngwing.com.png' width='50' style="cursor: pointer; position: relative;" onclick="ingresarProducto()">
-    <img src = 'imagenes/iconfinder-trash-4341321_120557.png' width='50' style="cursor: pointer; position: relative;" onclick="borrarProducto()">
-    <br>
-    <br>
-    <br>
-    <br>
 
-
+    <div class="forma">
+        <input type="number" min='0'  id="precioDeCompra" placeholder="Precio de compra" />
+        <br>
+        <br>
+        <input type="number" min='0'  id="precioDeVenta" placeholder='Precio de venta' />
+        <br>
+        <br>
+        <input type="text"  id="nombreProducto" placeholder='Nombre' />
+        <br>
+        <br>
+        <input type="number" min='0'  id="inventarios" placeholder='Inventarios' />
+        <br>
+        <br>
+        <input type="number" min='0'  id="ordenDeRecompra" placeholder='Orden de recompra' />
+        <br>
+        <br>
+        <button onclick="botonEnter()" > ENTER </button>
+    </div>
+    <button id='botoncliente' onclick="botonCliente()">Cliente</button>
 </body>
 </html>

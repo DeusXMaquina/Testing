@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="diseñoPuntoDeVenta.css"> 
-    <title>ABARROTES Johnny Pagliacci</title>
+    <link rel="stylesheet" href="eliminar.css">
+    <title>Eliminar Producto</title>
 </head>
 <body>
+    <script src="eliminar.js"></script>
     <header>
         <nav class="navegacion">
             <ul class="menu">
                 <li><a href='#'>PRODUCTOS</a>
                     <ul class='subMenu'>
-                        <li><a href='#' onclick="productos()" >INGRESAR PRODUCTOS</a></li>
-                        <li><a href='#'onclick="eliminar()" >ELIMINAR PRODUCTOS</a></li>
+                        <li><a href='#' onclick="productos()">INGRESAR PRODUCTOS</a></li>
+                        <li><a href='#' >ELIMINAR PRODUCTOS</a></li>
                     </ul>
                 </li>
                 <li><a href='#'>INVENTARIO</a>
@@ -35,10 +36,7 @@
                 </li>
             </ul>
         </nav>
+    <button href='#' id='botoncliente' onclick="botonCliente()">Cliente</button>
     </header>
-
-    <script src="funcionalidadPuntoDeVenta.js"></script>
-    <button id='logOut' onclick="interfaz()" href='#'>LogOut</button>
-    
 </body>
 </html>
